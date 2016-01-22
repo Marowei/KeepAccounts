@@ -33,7 +33,7 @@ public class SetDate extends ActionBarActivity {
         strMonth=getDateBundle.getString("strMonth");
         strDay=getDateBundle.getString("strDay");
         textSetDate.setText(strYear+"月"+strMonth+"月"+strDay+"日");
-        dpSetDate.init(Integer.parseInt(strYear),Integer.parseInt(strMonth),Integer.parseInt(strDay),//設定年月日初始值
+        dpSetDate.init(Integer.parseInt(strYear),Integer.parseInt(strMonth)-1,Integer.parseInt(strDay),//設定年月日初始值
                 /***DatePicker更改觸發事件***/
                 new DatePicker.OnDateChangedListener() {
                     @Override
